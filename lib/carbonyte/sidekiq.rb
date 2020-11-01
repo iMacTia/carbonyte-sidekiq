@@ -1,8 +1,11 @@
-require "carbonyte/sidekiq/version"
+# frozen_string_literal: true
 
+require 'carbonyte/sidekiq/version'
+
+# Main Carbonyte module
 module Carbonyte
+  # Main Carbonyte::Sidekiq module
   module Sidekiq
-    class Error < StandardError; end
     # Your code goes here...
   end
 end
