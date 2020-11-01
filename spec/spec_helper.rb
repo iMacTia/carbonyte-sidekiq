@@ -1,6 +1,13 @@
 # frozen_string_literal: true
 
+require 'simplecov'
+SimpleCov.start do
+  minimum_coverage 90
+  minimum_coverage_by_file 90
+end
+
 require 'bundler/setup'
+require 'carbonyte/spec_helper'
 require 'carbonyte/sidekiq'
 
 RSpec.configure do |config|
